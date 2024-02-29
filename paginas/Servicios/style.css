@@ -7,6 +7,7 @@
     text-decoration: none;
     font-family: 'Roboto', sans-serif;;
     box-sizing: border-box;
+    position: relative;
 }
 
 :root {
@@ -26,33 +27,6 @@ span {
 body {
     background: #fefefe;
     overflow-x: hidden;
-}
-
-.info {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    background: #4989A2;
-}
-
-
-.icons a {
-    color: #f3f4f6;
-    margin: 20px;
-}
-
-.icons a:hover {
-    text-decoration: underline;
-}
-
-.icons a i{
-    padding: 5px 10px;
-    border-radius: 50px;
-    color: #fff;
-    background: #D9DC58;
-    margin-right: 10px;
 }
 
 header {
@@ -157,21 +131,6 @@ header {
 
     .nav-bar ul li a {
         margin-bottom: 12px;
-    }
-}
-
-@media screen and (max-width: 392px ) {
-    .info {
-        height: 70px;
-    }
-
-    .info .icons{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .info .icons a {
-        margin: 8px;
     }
 }
 
@@ -409,4 +368,58 @@ footer {
     color: #f2f2f2;
     opacity: 0.3;
     text-align: center;
+}
+
+/*-----------------CANALES--------------*/
+.contact-logo {
+    padding: 7px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: red;
+}
+
+.contact-info {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    background-color: rgba(249, 249, 249, 0.416); 
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center; 
+    backdrop-filter: blur(1px); 
+}
+
+.title {
+    background-color: crimson;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 1rem;
+}
+
+.contact {
+    display: inline-block; 
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width: 80%; 
+    text-decoration: none;
+}
+
+#whatsapp-button {
+    background-color: #25D366; 
+    color: white;
+}
+
+#contact-button {
+    background-color: #FFA500; 
+    color: white;
 }

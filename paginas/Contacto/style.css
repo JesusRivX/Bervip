@@ -28,33 +28,6 @@ body {
     overflow-x: hidden;
 }
 
-.info {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    background: #4989A2;
-}
-
-
-.icons a {
-    color: #f3f4f6;
-    margin: 20px;
-}
-
-.icons a:hover {
-    text-decoration: underline;
-}
-
-.icons a i{
-    padding: 5px 10px;
-    border-radius: 50px;
-    color: #fff;
-    background: #D9DC58;
-    margin-right: 10px;
-}
-
 header {
     width: 100%;
     position: sticky;
@@ -64,8 +37,8 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 100px;
-    top: 0; /* Posición fija en la parte superior */
-    z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
+    top: 0; 
+    z-index: 1000;
 }
 
 
@@ -160,29 +133,13 @@ header {
     }
 }
 
-@media screen and (max-width: 392px ) {
-    .info {
-        height: 70px;
-    }
-
-    .info .icons{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .info .icons a {
-        margin: 8px;
-    }
-}
-
-
 /*--------------------------BG----------------------*/
 .contact-bg{
     position: relative;
     height: 50vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(img/bg.avif);
     background-position: center;
-    background-size: cover; /* Ajustar la imagen para cubrir todo el contenedor */
+    background-size: cover; 
     background-repeat: no-repeat;
     text-align: center;
     color: #fff;

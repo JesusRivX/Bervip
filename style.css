@@ -66,10 +66,6 @@ header {
     margin: 0 2px;
 }
 
-.nav-bar ul li:last-child a {
-    margin-left: 40px;
-}
-
 .nav-bar ul li a:hover {
     color: #fefefe;
     background: #D9DC58;
@@ -784,7 +780,7 @@ footer {
     width: 50px;
     border-radius: 50px;
     border: 2px solid #000;
-    background-image: url(img/social-media.png);
+    background-image: url(./img/social-media.png);
     background-position: center;
     background-size: 40%;
     background-repeat: no-repeat;
@@ -797,15 +793,11 @@ footer {
 }
 
 .social-icon:nth-of-type(2) {
-    background-image: url(img/ig2.png);
+    background-image: url(./img/ig2.png);
 }
 
 .social-icon:nth-of-type(3) {
-    background-image: url(img/twitter.png);
-}
-
-.social-icon:nth-of-type(4) {
-    background-image: url(img/video.png);
+    background-image: url(../../img/video.png);
 }
 
 .footer-menu-container {
@@ -837,15 +829,17 @@ footer {
     bottom: 20px;
     right: 20px;
     background-color: red;
+    border: 3px solid #ffffff;
+    border-radius: 7px;
 }
 
 .contact-info {
     display: none;
     position: absolute;
-    bottom: 50px;
+    bottom: 65px;
     right: 0;
     background-color: rgba(249, 249, 249, 0.416); 
-    border: 2px solid #000000;
+    border: 1px solid #000000;
     border-radius: 10px;
     padding: 10px;
     text-align: center; 
@@ -882,4 +876,8 @@ footer {
 #contact-button {
     background-color: #FFA500; 
     color: white;
+}
+
+#contact-logo {
+    font-size: 40px; 
 }

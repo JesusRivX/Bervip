@@ -179,7 +179,7 @@ header {
     background-size: 55%;
     background-color: #fdfdfd;
     overflow: hidden;
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .inner-container{
@@ -236,6 +236,14 @@ header {
     }
 }
 
+@media screen and (max-width:321px){
+    .skills{
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+}
+
 
 /*------------------------OUR SERVICE----------------------------*/
 .our-services{
@@ -258,6 +266,7 @@ header {
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
+    margin-top: -4rem;
 }
 .main-services .inner-service{
     flex: 1 1 200px;
@@ -307,24 +316,14 @@ header {
         padding: 0.2rem 0;
     }
 
+    .inner-service .inner-icons{
+        padding-bottom: 1rem;
+    }
+
     .inner-service h2{
-        font-size: 1.5rem;
-        color: black;
-        padding: .2rem;
+        padding-bottom: 1.6rem;
     }
-    .inner-service h2 span{
-        color: var(--secondclr);
-    }
-    
-    .inner-service p{
-        color: var(--secondclr);
-        font-size: 1rem;
-        padding: 0;
-        text-align: left;
-    }
-
 }
-
 
 /*---------------Banner---------------*/
 .banner{
@@ -369,6 +368,24 @@ header {
 .conten a:hover{
     background: #2e2e2e;
     color: #fff;
+}
+
+@media screen and (max-width: 426px) {
+    .conten h3{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .conten h3{
+        font-size: 2.7rem;
+    }
+}
+
+@media screen and (max-width: 326px) {
+    .conten h3{
+        font-size: 2.4rem;
+    }
 }
 
 

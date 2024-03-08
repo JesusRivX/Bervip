@@ -43,7 +43,8 @@
         <div class="container">
             <div class="container__left">
                 <div class="content">   
-                    <h1>DESCUBRIENDO<br/>NUEVAS FRONTERAS</h1>
+                    <h1>EMPRESA DE TRANSPORTE<br/>Y TURISMO BERVIC</h1>
+                    <div class="texto-cambiante" id="texto-cambiante"></div>
                 </div>
             </div>
         </div>
@@ -263,6 +264,20 @@
             navBar = document.querySelector(".nav-bar");
             navBar.classList.toggle("active");
         }
+    </script>
+    <script>
+        const palabrasClave = ["traslado al aeropuerto", "servicio de carga", "traslado de personal", "turismo a nivel nacional", "city tour", "full day"];
+        let indice = 0;
+        const textoCambiante = document.getElementById("texto-cambiante");
+
+        function cambiarTexto() {
+            textoCambiante.textContent = palabrasClave[indice];
+            indice = (indice + 1) % palabrasClave.length;
+        }
+
+        cambiarTexto(); 
+
+        setInterval(cambiarTexto, 2000); 
     </script>
 </body>
 </html>

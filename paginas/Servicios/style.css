@@ -266,9 +266,13 @@ header {
         width: 100%;
         border-radius: 25px;
     }
+
+    .grid > #turs{
+        height: 465px;
+    }
 }
 
-@media (max-width: 426px){
+@media (max-width: 440px){
     .grid > article{
         text-align: center;
         width: 350px;
@@ -283,9 +287,9 @@ header {
     }
 }
 
-@media (max-width: 376px){
+@media (max-width: 415px){
     .grid > article{
-        margin-left: -2.8rem;
+        margin-left: -2rem;
         width: 320px;
         height: 420px;
     }
@@ -299,7 +303,23 @@ header {
     }
 }
 
-@media (max-width: 321px){
+@media (max-width: 388px) and (min-width: 322px){
+    .grid > article{
+        margin: 0 -2.7rem;
+        width: 320px;
+        height: 420px;
+    }
+
+    .grid > article:nth-child(2){
+        height: 450px;
+    }
+
+    .grid > #turs,#turs1{
+        height: 445px;
+    }
+}
+
+@media (max-width: 351px){
     .grid > article{
         margin-left: -3rem;
         width: 275px;

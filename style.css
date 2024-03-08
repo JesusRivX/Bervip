@@ -644,6 +644,18 @@ header {
     color: #fff;
 }
 
+@media screen and (max-width: 426px) {
+    .conten h3{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .conten h3{
+        font-size: 2.8rem;
+    }
+}
+
 /*--------------SERVICE----------------*/
 .service {
     padding: 100px 0;
@@ -781,6 +793,7 @@ header {
 .contenedores img { 
     max-width: 100%;
     display: block;
+    border: 7px solid #1f1f1f;
 }
 
 .contenedores h2 {

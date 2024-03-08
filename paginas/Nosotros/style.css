@@ -330,7 +330,7 @@ header {
 .banner{
     margin-top: 50px;
     margin-bottom: 20px;
-    background: linear-gradient(rgba(17,17,17,.7),rgba(17,17,17,.7)), url(img/banner.jpg) no-repeat;
+    background: linear-gradient(rgba(17,17,17,.7),rgba(17,17,17,.7)), url(../../img/banner.png) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -340,9 +340,10 @@ header {
 
 .conten h3{
     font-size: 3.5rem;
-    color: #4989A2;
+    color: #fff;
     margin-top: 1rem;
     transition: 0.4s;
+    text-transform: uppercase;
 }
 
 .conten p{

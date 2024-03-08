@@ -133,7 +133,7 @@ header {
 /*--------------------------BG----------------------*/
 .contact-bg{
     height: 50vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(./movil.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(./movil.webp);
     background-position: center;
     background-size: cover; 
     background-repeat: no-repeat;
@@ -158,6 +158,7 @@ header {
 .our-services{
     text-align: center;
     margin: 5em 0 4em 0;
+    text-transform: uppercase;
 }
 
 .grid{
@@ -284,7 +285,50 @@ header {
 
 @media (max-width: 376px){
     .grid > article{
-        margin-left: -3.8rem;
+        margin-left: -2.8rem;
+        width: 320px;
+        height: 420px;
+    }
+
+    .grid > article:nth-child(2){
+        height: 450px;
+    }
+
+    .grid > #turs,#turs1{
+        height: 445px;
+    }
+}
+
+@media (max-width: 321px){
+    .grid > article{
+        margin-left: -3rem;
+        width: 275px;
+        height: 400px;
+        margin-top: 2em;
+    }
+
+    .grid > article:nth-child(1){
+        height: 465px;
+    }
+
+    .grid > article:nth-child(2){
+        height: 465px;
+    }
+
+    .grid > article:nth-child(3){
+        height: 440px;
+    }
+
+    .grid > article:nth-child(4){
+        height: 445px;
+    }
+
+    .grid > #turs{
+        height: 505px;
+    }
+
+    .grid > #turs1{
+        height: 465px;
     }
 }
 

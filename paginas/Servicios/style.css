@@ -162,12 +162,11 @@ header {
 }
 
 .grid{
-    margin: 70px;
-    margin-top: 30px;
+    margin: 5vw; 
+    margin-top: 3vw; 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+    grid-gap: 8vw;
     justify-items: center;
 }
 
@@ -225,30 +224,36 @@ header {
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text button img{
+    margin-right: 8px;
+    width: 1rem;
+    height: 1rem;
 }
 
 
 @media (max-width: 1440px){
-    .grid{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 1024px){
-    .grid{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
 @media (max-width: 783px){
-    .grid{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 
-    .grid > article{
+    .grid > article {
         background: #fff;
         border: none;
         display: block;
@@ -260,27 +265,33 @@ header {
         transition: transform .3s;
     }
 
-    .grid > article img{
+    .grid > article img {
         margin-top: 15px;
         height: 180px;
         width: 100%;
         border-radius: 25px;
     }
 
-    .grid > #turs{
+    .grid > #turs {
         height: 465px;
+    }
+
+    .text button img{
+        margin: 0 8px;
+        width: 1rem;
+        height: 1rem;
     }
 }
 
 @media (max-width: 440px){
-    .grid > article{
+    .grid > article {
         text-align: center;
         width: 350px;
         height: 420px;
-        margin-left: -2rem;
+        margin-left: -2vw; 
     }
 
-    .text p{
+    .text p {
         font-family: 'Calibri';
         margin-top: 12px;
         margin-bottom: 15px;
@@ -288,8 +299,8 @@ header {
 }
 
 @media (max-width: 415px){
-    .grid > article{
-        margin-left: -2rem;
+    .grid > article {
+        margin-left: -2vw; 
         width: 320px;
         height: 420px;
     }
@@ -298,14 +309,14 @@ header {
         height: 450px;
     }
 
-    .grid > #turs,#turs1{
+    .grid > #turs, .grid > #turs1 {
         height: 445px;
     }
 }
 
-@media (max-width: 388px) and (min-width: 322px){
-    .grid > article{
-        margin: 0 -2.7rem;
+@media (max-width: 388px){
+    .grid > article {
+        margin: 0 -2.7vw; 
         width: 320px;
         height: 420px;
     }
@@ -314,14 +325,14 @@ header {
         height: 450px;
     }
 
-    .grid > #turs,#turs1{
+    .grid > #turs, .grid > #turs1 {
         height: 445px;
     }
 }
 
 @media (max-width: 351px){
-    .grid > article{
-        margin-left: -3rem;
+    .grid > article {
+        margin-left: -3vw; 
         width: 275px;
         height: 400px;
         margin-top: 2em;
@@ -343,12 +354,18 @@ header {
         height: 445px;
     }
 
-    .grid > #turs{
+    .grid > #turs {
         height: 505px;
     }
 
-    .grid > #turs1{
+    .grid > #turs1 {
         height: 465px;
+    }
+}
+
+@media (max-width: 321px){
+    .text button img{
+        margin-left: -2px;
     }
 }
 
@@ -356,7 +373,7 @@ header {
 .banner{
     margin-top: 50px;
     margin-bottom: 20px;
-    background: linear-gradient(rgba(17,17,17,.7),rgba(17,17,17,.7)), url(../../img/banner.png) no-repeat;
+    background: linear-gradient(rgba(17,17,17,.7),rgba(17,17,17,.7)), url(../../img/banner.webp) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -469,8 +486,12 @@ footer {
 
 .footer-menu-container {
     list-style-type: none;
-    color: #f2f2f2;
     font-size: 18px;
+}
+
+.footer-menu-container a{
+    text-decoration: none;
+    color: #f2f2f2;
 }
 
 .menu-item {

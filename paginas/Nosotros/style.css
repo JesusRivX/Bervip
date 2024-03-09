@@ -231,6 +231,7 @@ header {
     .about-section{
         padding: 0;
     }
+
     .inner-container{
         padding: 60px;
     }
@@ -250,16 +251,19 @@ header {
     font-family: 'Roboto', sans-serif;
     padding: 1.7rem 15%;
 }
+
 .our-services h1{
     color: black;
     font-size: 40px;
     text-align: center;
     padding: 0.8rem 0;
 }
+
 .our-services h1 span{
     color: #1FAEEB;
     transition: 0.3s;
 }
+
 .main-services{
     display: flex;
     justify-content: center;
@@ -268,6 +272,7 @@ header {
     flex-wrap: wrap;
     margin-top: -4rem;
 }
+
 .main-services .inner-service{
     flex: 1 1 200px;
     padding: 2rem 2rem;
@@ -298,6 +303,12 @@ header {
     text-align: center;
 }
 
+@media (max-width: 620px){
+    .main-services{
+        margin-top: 1.5rem;
+    }
+}
+    
 @media (max-width: 500px){
     .our-services h1{
         font-size: 30px;
@@ -309,6 +320,7 @@ header {
         align-items: center;
         gap: 5px;
         flex-wrap: wrap;
+        margin-top: 1.5rem;
     }
 
     .inner-icons img{

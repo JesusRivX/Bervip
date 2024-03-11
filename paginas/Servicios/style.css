@@ -298,7 +298,7 @@ header {
     }
 }
 
-@media (max-width: 415px){
+@media (max-width: 416px){
     .grid > article {
         margin-left: -2vw; 
         width: 320px;
@@ -309,7 +309,15 @@ header {
         height: 450px;
     }
 
-    .grid > #turs, .grid > #turs1 {
+    .grid > article:nth-child(5){
+        height: 450px;
+    }
+
+    .grid > #turs{
+        height: 425px;
+    }
+
+    .grid > #turs1 {
         height: 445px;
     }
 }
@@ -325,7 +333,11 @@ header {
         height: 450px;
     }
 
-    .grid > #turs, .grid > #turs1 {
+    .grid > #turs{
+        height: 430px;
+    }
+
+    .grid > #turs1 {
         height: 445px;
     }
 }
@@ -355,7 +367,7 @@ header {
     }
 
     .grid > #turs {
-        height: 505px;
+        height: 500px;
     }
 
     .grid > #turs1 {
@@ -366,6 +378,10 @@ header {
 @media (max-width: 321px){
     .text button img{
         margin-left: -2px;
+    }
+
+    .grid > article:nth-child(5){
+        height: 520px;
     }
 }
 

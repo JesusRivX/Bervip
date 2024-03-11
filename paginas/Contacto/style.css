@@ -194,7 +194,7 @@ header {
 }
 
 .contactUs h2 {
-    color: #4989A2;
+    color: #fff;
     padding-bottom: 20px;
     margin-bottom: 50px;
     font-weight: 500;
@@ -207,7 +207,7 @@ header {
     width: 170px;
     height: 3px;
     bottom: 0;
-    background: #4989A2;
+    background: #fff;
     transform: translateX(0%);
     
 }
